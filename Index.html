@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Calculator
+</title>
+<style>
+    h1{
+        font-size:50px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        flood-color: #000000;
+        padding: 20px;
+        background-color:gray;
+        border: 10px;
+        border-color: #000000;
+        border-radius: 20px;
+    }
+    * {  
+  box-sizing: border-box;  
+  font-family: 'Roboto', sans-serif;  
+  border-radius: 20px;
+}  
+body{
+    background-image: url(https://images.hdqwalls.com/wallpapers/venom-amoled-4k-k4.jpg);
+background-blend-mode: hue;
+border-radius: 20px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+ 
+.btnTop{
+    color: brown;
+}
+.hello{
+    background-color: black;
+}
+.hero{
+    
+  width: 50px;  
+  margin: auto;  
+  min-height: 10px;  
+  border: solid 2px #000000;  
+  box-shadow: 1px 5px 1px -5px black; 
+  padding: 5px; 
+}
+.btnTop{width: 100px;  
+  margin: auto;  
+  min-height: 10px;  
+  border: solid 1px #3A4655;  
+ box-shadow: 1px 5px 1px -5px   black; 
+  background-color: black;
+  padding: 5px; 
+  color: white;
+  font-size: 100px;
+}
+.calculator{
+    font-size: 10px;
+    color: aliceblue;
+    font-style: calc();
+    font-weight: bolder;
+}
+.display{
+  font-size: 35px;
+    background:white;  
+  width: 100%;  
+  height: 100px;  
+  text-align: right;
+  text-align: end;
+  
+}
+
+</style>  
+<body>
+    <h1>Welcome to Venom Calculator </h1>
+
+<form name="Calculator" class = "calculator" >  
+<table border="10" align="center" aria-placeholder="0" cellpadding="15" cellspacing="15" bgcolor="white" class="hello" >  
+<tr>  
+<td>  
+<input type="text" name="Input" Size="10" class="display" >  
+<br>  
+</td>  
+</tr>  
+<tr>
+<td>
+   
+    <input type="button" name = "one" style="font-size:30px" class="hero" value=" 1 " OnClick="Calculator.Input.value += '1'">  
+    <input type="button" name="two" style="font-size: 30px;" class="hero" value=" 2 " Onclick="Calculator.Input.value+= '2'">
+    <input type="button" name="three" style="font-size:30px" class="hero" value=" 3 " Onclick="Calculator.Input.value+='3'">
+    <input type="button" name="add" style="font-size:30px" class="btnTop" value=" + " Onclick="Calculator.Input.value+='+'">
+    
+</tr>
+</td>
+<tr>
+<td>
+    <input type="button" name="four" style="font-size: 30px;" class="hero" value=" 4 " Onclick="Calculator.Input.value+='4'">
+    <input type="button" name="five" style="font-size: 30px;" class="hero" value=" 5 " Onclick="Calculator.Input.value+='5'">
+    <input type="button" name="six" style="font-size: 30px;" class="hero" value=" 6 " Onclick="Calculator.Input.value+='6'">
+    <input type="button" name="substract" style="font-size:30px" class="btnTop" value=" - " Onclick="Calculator.Input.value+='-'">
+</tr>
+</td>
+<tr>
+    <td>
+        <input type="button" name="seven" style="font-size: 30px;" class="hero" value=" 7 " Onclick="Calculator.Input.value+='7'">
+        <input type="button" name="eight" style="font-size: 30px;" class="hero" value=" 8 " Onclick="Calculator.Input.value+='8'">
+        <input type="button" name="nine" style="font-size: 30px;" class="hero" value=" 9 " Onclick="Calculator.Input.value+='9'">
+        <input type="button" name="multiply" style="font-size:30px" class="btnTop" value=" x " Onclick="Calculator.Input.value+='*'">
+    </tr>
+    </td>
+    <tr>
+        <td>
+            <input type="button" name="clear" style="font-size:30px" class="hero"  value=" C " Onclick="Calculator.Input.value =''">
+            <input type="button" name="zero" style="font-size:30px" class="hero"  value=" 0 " Onclick="Calculator.Input.value +='0'">
+            <input type="button" name="result" style="font-size:30px" class="hero" value=" = " Onclick="Calculator.Input.value= eval(Calculator.Input.value)">
+            <input type="button" name="divide" style="font-size:30px" class="btnTop" value=" / " Onclick="Calculator.Input.value+='/'">
+            
+        </tr>
+        </td>
+
+      </body>  
+
+</body>
+</html>
